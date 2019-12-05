@@ -1,0 +1,336 @@
+package com.NewTour;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.newtours.LoginPage;
+
+import newtours.Basetest;
+
+public class LoginPageTest extends Basetest {
+	LoginPage pil=null;
+	@Test(priority=1)
+	public void hometest() {
+		pil=PageFactory.initElements(driver, LoginPage.class);
+		pil.home();
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		System.out.println();
+	}
+	
+	
+@Test(priority=02)
+public void signontest() {
+	pil=PageFactory.initElements(driver, LoginPage.class);
+	pil.signon();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+/*@Test(priority=19)
+public void usernametest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.username();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=20)
+public void passwordtest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.password();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=21)
+public void submittest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.submit();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}*/
+
+/*@Test(priority=03)
+public void registertest() throws InterruptedException {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+	
+}*/
+
+/*@Test(priority=04)
+public void firstnametest() {
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.firstname();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=05)
+public void lastnametest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.lastname();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=06)
+public void phonetest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.phone();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=07)
+public void emailtest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.email();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=8)
+public void addresstest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.address();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+
+@Test(priority=9)
+public void citytest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.city();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=10)
+public void statetest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.state();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=11)
+public void postalcodetest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.postalcode();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=12)
+public void countrytest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.country();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=13)
+public void usernametesttest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.username();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=14)
+public void passwordtest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.password();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=15)
+public void confirmpasswordtest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.confirmpassword();
+System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+}
+@Test(priority=16)
+public void submit1test() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+pil=PageFactory.initElements(driver,LoginPage.class);
+pil.submit1();
+/*FileInputStream file = new FileInputStream("./Pom/book2.xlsx"); 
+XSSFWorkbook workBook = new XSSFWorkbook (file);
+XSSFSheet sheet = workBook.getSheet("Sheet1");
+int rowCount=sheet.getLastRowNum();
+for(int i=1;i<=rowCount;i++) 
+{
+	Row row=sheet.getRow(i);
+	pil=PageFactory.initElements(driver, LogInPage.class);
+	pil.logIn(row.getCell(0).getStringCellValue(), row.getCell(1).getStringCellValue());
+	String expected_Title="Find";
+	System.out.println(" Expected Title is : "+expected_Title);
+	String actual_Title=driver.getTitle();
+	System.out.println(" Actual Title is : "+actual_Title); 
+	if(actual_Title.contains(expected_Title))
+	{ 
+		System.out.println(" LogIn Successfull - PASS");
+	}
+	else
+	{
+		System.out.println(" LogIn Failed - FAIL");
+	}
+	FileOutputStream file1 = new FileOutputStream("./Pom/Applicationtestdataresultsfiles/NewTours.xlsx"); 
+	workBook.write(file1); 
+	driver.navigate().back();	*/
+
+
+
+/*System.out.println(driver.getTitle());
+System.out.println(driver.getCurrentUrl());
+System.out.println();
+
+String expected_HomePageTitle="Find";
+System.out.println(" The expected HomePage Title is : "+expected_HomePageTitle);
+String actual_WebPageTitle=driver.getTitle();
+System.out.println(" The actual Title of the Webpage is : "+actual_WebPageTitle);
+if(actual_WebPageTitle.contains(expected_HomePageTitle))
+{ 
+	System.out.println(" LogIn Successfull - PASS");
+}
+else
+{
+	System.out.println(" LogIn Failed - FAIL");
+}
+driver.navigate().back();
+//driver.navigate().refresh(); } //driver.quit(); // closes the Browser will the Tab's in it
+}
+
+
+
+
+@Test(priority=17)
+public void supporttest() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.support();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+	
+}
+@Test(priority=18)
+public void contact() {
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.register();
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.contact();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+	
+}
+@Test(priority=19)
+public void flights() {
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.flights();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=20)
+public void hotels() {
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.Hotels();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=21)
+public void carrentals() {
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.carrentals();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=22)
+public void Cruises() {
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.Cruises();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+
+@Test(priority=23)
+public void Destinations()
+{
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.Destinations();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}
+@Test(priority=24)
+public void Vacations()
+{
+	;
+	pil=PageFactory.initElements(driver,LoginPage.class);
+	pil.Vacations();
+	System.out.println(driver.getTitle());
+	System.out.println(driver.getCurrentUrl());
+	System.out.println();
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

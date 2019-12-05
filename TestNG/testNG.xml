@@ -1,0 +1,7 @@
+<suite name="Newtours Application">
+<test name="TestNG">
+<classes>
+<class name="testNG">
+</classes>
+</test>
+</suite>

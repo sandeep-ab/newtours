@@ -1,0 +1,24 @@
+package com.ICICIBank_Links;
+
+public class LinksTest {
+	
+	@Given("^Open chrome browser and navigate to ICICIBank Application$")
+	public void Open_chrome_browser_and_navigate_to_ICICIBank_Application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@When("^Identifing the Links in ICICIBank Application$")
+	public void Identifing_the_Links_in_ICICIBank_Application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^Links should be identified successfully and close the Application$")
+	public void Links_should_be_identified_successfully_and_close_the_Application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+
+}

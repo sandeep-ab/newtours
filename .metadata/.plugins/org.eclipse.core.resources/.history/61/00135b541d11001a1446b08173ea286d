@@ -1,0 +1,31 @@
+package com.ICICIBank_Links;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LinksTest {
+	WebDriver driver=null;
+	String url="https://www.icicibank.com/";
+	
+	@Given("^Open chrome browser and navigate to ICICIBank Application$")
+	public void Open_chrome_browser_and_navigate_to_ICICIBank_Application() throws Throwable {
+	    
+	}
+
+	@When("^Identifing the Links in ICICIBank Application$")
+	public void Identifing_the_Links_in_ICICIBank_Application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^Links should be identified successfully and close the Application$")
+	public void Links_should_be_identified_successfully_and_close_the_Application() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+
+}
